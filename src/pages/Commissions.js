@@ -8,7 +8,7 @@ export default function Commissions() {
 	return (
 		<div>
 			<header>
-				<h1>Commissions</h1>
+				<h1>Commissions!</h1>
 				<div>
 					<h3>Contact: avdv@email.com </h3>
 					<h3>Insta: @riddlemeanade</h3>
