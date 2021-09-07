@@ -4,6 +4,10 @@ import styled from "styled-components";
 import { lead_chars, top_chars, body_chars, wide_chars } from "../assets/index";
 
 export default function Home() {
+	if (!body_chars || !top_chars || !lead_chars || !wide_chars) {
+		return <h1>Loading...</h1>;
+	}
+
 	return (
 		<StyledHome>
 			<section className="landing">
