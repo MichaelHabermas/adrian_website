@@ -1,6 +1,35 @@
-* {
+*,
+*::before,
+*::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-size: 62.5%;
+	list-style: none;
+	text-decoration: none;
+	overflow-x: hidden;
+}
+header {
+	border: 1px dotted blue;
+	width: 100%;
+}
+h1 {
+	border: 1px dotted yellow;
+	font-size: 4rem;
+	text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1300px) {
+}
+@media screen and (min-width: 1400px) {
+}
+@media screen and (min-width: 1550px) {
 }
