@@ -54,6 +54,9 @@ const StyledHome = styled.div`
 	width: 90%;
 	margin: 0 auto;
 
+	h1 {
+		font-family: "Lobster", cursive;
+	}
 	// Landing Section
 	.lead_pics {
 	}
