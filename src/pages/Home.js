@@ -23,22 +23,40 @@ export default function Home() {
 	return (
 		<StyledHome>
 			<section className="landing">
-				<section className="landing_text">
-					<h1>Take a Valk on the Vild Side</h1>
-					<h3>From the Mind and Hand of Adrian van der Valk</h3>
-				</section>
-
-				<section className="landing_images">
-					<img className="hero" src={hero_img} alt="card_pic" />
-					<section className="lead_pics">
-						{lead_chars.map(card => {
-							return <img className="lead_card" src={card} alt="card_pic" />;
-						})}
+				<section className="landing_content">
+					<section className="landing_text">
+						<h1>Take a Valk on the Vild Side</h1>
+						<h3>From the Mind and Hand of Adrian van der Valk</h3>
 					</section>
-				</section>
 
-				<section className="socials_container">
-					<div className="social_links"></div>
+					<section className="landing_images">
+						<img className="hero" src={hero_img} alt="card_pic" />
+						<section className="lead_pics">
+							{lead_chars.map(card => {
+								return <img className="lead_card" src={card} alt="card_pic" />;
+							})}
+						</section>
+					</section>
+
+					<section className="socials_container">
+						<div className="social_links">
+							<a href="#" className="icon instaIcon">
+								<i className="fab fa-instagram"></i>
+							</a>
+							<a href="#" className="icon youtubeIcon">
+								<i className="fab fa-youtube"></i>
+							</a>
+							<a href="#" className="icon linkedinIcon">
+								<i className="fab fa-linkedin"></i>
+							</a>
+							<a href="#" className="icon facebookIcon">
+								<i className="fab fa-facebook-square"></i>
+							</a>
+							<a href="#" className="icon twitterIcon">
+								<i className="fab fa-twitter-square"></i>
+							</a>
+						</div>
+					</section>
 				</section>
 			</section>
 
@@ -94,15 +112,21 @@ const StyledHome = styled.div`
 
 	// Landing Section
 	.landing {
-		height: 90vh;
 		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		border: 1px solid black;
-
+		align-items: center;
+		/* border: 1px solid black; */
 		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 		height: calc(var(--vh, 1vh) * 100);
 	}
+    .landing_content{
+        display: flex;
+		flex-direction: column;
+        align-items: center;
+		justify-content: space-between;
+        height: 80%;
+        
+		border: 1px solid black;
+    }
 	.landing_text {
 		margin: 10% 0 5%;
 	}
@@ -138,6 +162,26 @@ const StyledHome = styled.div`
 		object-fit: cover;
 		width: 100%;
 		height: auto;
+	}
+	.socials_container,
+	.social_links,
+	.icon,
+	.instaIcon,
+	.youtubeIcon,
+	.linkedinIcon,
+	.facebookIcon,
+	.twitterIcon {border: 1px solid green;}
+	}
+	.socials_container {
+		display: flex;
+        align-items: center;
+        justify-content: center;
+	}
+	.social_links {
+	}
+	.icon {
+		width: 50px;
+		height: 50px;
 	}
 
 	// BODY Section
