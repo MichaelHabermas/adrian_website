@@ -1,8 +1,9 @@
 // LANDING CHARS
-import char_lead_1 from "./char_images/char_lead_1_big.png";
-import char_lead_2 from "./char_images/char_lead_2.png";
-import char_lead_3 from "./char_images/char_lead_3.png";
-import char_lead_4 from "./char_images/char_lead_4.png";
+import hero_img from "./char_images/char_lead_1_big.png";
+
+import char_lead_1 from "./char_images/char_lead_2.png";
+import char_lead_2 from "./char_images/char_lead_3.png";
+import char_lead_3 from "./char_images/char_lead_4.png";
 
 // TOP OF GALLERY CHARS
 import char_top_1 from "./char_images/char_top_1.png";
@@ -36,7 +37,7 @@ import char20 from "./char_images/char_20.png";
 import mermaid from "./char_images/mermaid.png";
 import breakfast_club from "./char_images/breakfast_club.png";
 
-const lead_chars = [char_lead_1, char_lead_2, char_lead_3, char_lead_4];
+const lead_chars = [char_lead_1, char_lead_2, char_lead_3];
 const top_chars = [char_top_1, char_top_2, char_top_3, char_top_4];
 const body_chars = [
 	char1,
@@ -62,4 +63,4 @@ const body_chars = [
 ];
 const wide_chars = { mermaid: mermaid, breakfast_club: breakfast_club };
 
-export { lead_chars, top_chars, body_chars, wide_chars };
+export { hero_img, lead_chars, top_chars, body_chars, wide_chars };
