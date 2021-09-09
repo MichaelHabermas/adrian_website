@@ -15,6 +15,11 @@ export default function Home() {
 		return <h1>Loading...</h1>;
 	}
 
+	// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+	let vh = window.innerHeight * 0.01;
+	// Then we set the value in the --vh custom property to the root of the document
+	document.documentElement.style.setProperty("--vh", `${vh}px`);
+
 	return (
 		<StyledHome>
 			<section className="landing">
@@ -94,6 +99,9 @@ const StyledHome = styled.div`
 		flex-direction: column;
 		justify-content: space-between;
 		border: 1px solid black;
+
+		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+		height: calc(var(--vh, 1vh) * 100);
 	}
 	.landing_text {
 		margin: 10% 0 5%;
