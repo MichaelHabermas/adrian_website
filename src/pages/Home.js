@@ -89,7 +89,7 @@ const StyledHome = styled.div`
 
 	// Landing Section
 	.landing {
-		height: 100vh;
+		height: 90vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
