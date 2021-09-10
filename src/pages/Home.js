@@ -152,12 +152,13 @@ const StyledHome = styled.div`
 		align-items: center;
 		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 		height: calc(var(--vh, 1vh) * 100);
+		border: 1px solid red;
 	}
 	.landing_content {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		height: 80%;
+		justify-content: space-around;
+		height: 100%;
 	}
 	.landing_text {
 		width: 80%;
@@ -165,7 +166,7 @@ const StyledHome = styled.div`
 	.landing_text h1 {
 		font-family: "Lobster", cursive;
 		text-align: left;
-		margin: 20% 0 5%;
+		/* margin: 20% 0 5%; */
 	}
 	.landing_text h3 {
 		font-size: 2rem;
