@@ -158,12 +158,9 @@ const StyledHome = styled.div`
 		flex-direction: column;
 		justify-content: space-between;
 		height: 80%;
-
-		border: 1px solid black;
 	}
 	.landing_text {
 		width: 80%;
-		border: 1px solid orange;
 	}
 	.landing_text h1 {
 		font-family: "Lobster", cursive;
@@ -181,13 +178,12 @@ const StyledHome = styled.div`
 		align-items: center;
 		justify-content: space-between;
 		height: 50%;
-		border: 1px solid red;
 	}
 	.hero {
 		object-fit: cover;
 		height: 100%;
 		border-radius: 5%;
-		box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 	}
 	.lead_pics {
 		display: flex;
@@ -196,7 +192,6 @@ const StyledHome = styled.div`
 		width: 20%;
 		align-items: center;
 		justify-content: space-between;
-		border: 1px solid blue;
 	}
 	.lead_card {
 		width: 100%;
