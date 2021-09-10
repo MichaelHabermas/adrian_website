@@ -225,7 +225,8 @@ const StyledHome = styled.div`
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 100%;
+		width: 90%;
+		margin: 0 auto;
 	}
 	.icon {
 		margin: 0 2%;
@@ -243,8 +244,21 @@ const StyledHome = styled.div`
 	.gallery_container h2 {
 		font-family: "Lobster", cursive;
 		text-align: center;
-		font-size: 6rem;
+		font-size: 8rem;
 		padding: 2rem;
+		background-image: linear-gradient(
+			160deg,
+			#f3ec78,
+			#f3ec78,
+			#af4261,
+			#af4261,
+			#af4261
+		);
+		background-size: 100%;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-moz-text-fill-color: transparent;
 	}
 	.gallery_container h2 {
 	}
