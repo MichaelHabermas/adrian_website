@@ -189,7 +189,7 @@ const StyledHome = styled.div`
 	}
 	.lead_pics {
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		height: 100%;
 		width: 20%;
 		align-items: center;
