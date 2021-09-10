@@ -176,6 +176,7 @@ const StyledHome = styled.div`
 		text-align: left;
 		font-size: 5rem;
 		line-height: 1;
+		margin-bottom: 2rem;
 	}
 
 	h1 span {
@@ -254,27 +255,6 @@ const StyledHome = styled.div`
 		margin: 1.5rem 0 2rem;
 		border-radius: 100px;
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-	}
-	.gallery_container h2 {
-		font-family: "Lobster", cursive;
-		text-align: center;
-		font-size: 8rem;
-		padding: 2rem;
-		background-image: linear-gradient(
-			160deg,
-			#f3ec78,
-			#f3ec78,
-			#af4261,
-			#af4261,
-			#af4261
-		);
-		background-size: 100%;
-		-webkit-background-clip: text;
-		-moz-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		-moz-text-fill-color: transparent;
-	}
-	.gallery_container h2 {
 	}
 
 	.card,
