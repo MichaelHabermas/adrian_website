@@ -293,11 +293,11 @@ const StyledHome = styled.div`
 		}
 	}
 	@media screen and (min-width: 768px) {
+	}
+	@media screen and (min-width: 1024px) {
 		.landing {
 			height: 100vh;
 		}
-	}
-	@media screen and (min-width: 1024px) {
 	}
 	@media screen and (min-width: 1200px) {
 	}
