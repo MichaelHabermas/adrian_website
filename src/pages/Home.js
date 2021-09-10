@@ -287,8 +287,10 @@ const StyledHome = styled.div`
 		}
 	}
 	@media screen and (orientation: landscape) {
-		/* height: 100vh; Fallback for browsers that do not support Custom Properties */
-		height: calc(var(--vh, 1vh) * 200);
+		.landing {
+			height: 200vh;
+			height: calc(var(--vh, 1vh) * 200);
+		}
 	}
 	@media screen and (min-width: 768px) {
 	}
