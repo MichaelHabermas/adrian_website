@@ -142,6 +142,9 @@ const StyledHome = styled.div`
 		width: 90%;
 		margin: 0 auto;
 	}
+	* {
+		overflow: visible;
+	}
 
 	// Landing Section
 	.landing {
@@ -184,6 +187,7 @@ const StyledHome = styled.div`
 		object-fit: cover;
 		height: 100%;
 		border-radius: 5%;
+		box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
 	}
 	.lead_pics {
 		display: flex;
@@ -197,17 +201,7 @@ const StyledHome = styled.div`
 	.lead_card {
 		width: 100%;
 		border-radius: 5%;
-	}
-
-	.socials_container,
-	.social_links,
-	.icon,
-	.instaIcon,
-	.youtubeIcon,
-	.linkedinIcon,
-	.facebookIcon,
-	.twitterIcon {
-		border: 1px solid green;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 	}
 
 	.socials_container,
@@ -228,14 +222,6 @@ const StyledHome = styled.div`
 	// BODY Section
 	.gallery {
 		background-image: url(${gallery_background});
-	}
-	.gallery,
-	.gallery_container,
-	.top_pics,
-	.body_of_images,
-	.mermaid,
-	.final_img {
-		overflow: visible;
 	}
 
 	.gallery_container h2 {
