@@ -173,7 +173,6 @@ const StyledHome = styled.div`
 		font-size: 5rem;
 	}
 	h1 span {
-		/* background-color: #f3ec78; */
 		padding: 0 3.5px 0 1px;
 		font-size: 5rem;
 		background-image: linear-gradient(160deg, #ff5cc8, #aa44fa, #4a2dff);
@@ -187,6 +186,7 @@ const StyledHome = styled.div`
 		font-size: 2rem;
 		text-align: left;
 		width: 80%;
+		line-height: 1.3;
 	}
 
 	.landing_images {
@@ -195,6 +195,8 @@ const StyledHome = styled.div`
 		align-items: center;
 		justify-content: space-between;
 		height: 50%;
+		width: 90%;
+		margin: 0 auto;
 	}
 	.hero {
 		object-fit: cover;
