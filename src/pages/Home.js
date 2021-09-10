@@ -286,7 +286,7 @@ const StyledHome = styled.div`
 			width: 49%;
 		}
 	}
-	@media screen and (orientation: landscape) {
+	@media screen and (orientation: landscape) and (max-device-width: 800px) {
 		.landing {
 			height: 200vh;
 			height: calc(var(--vh, 1vh) * 200);
