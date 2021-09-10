@@ -26,7 +26,11 @@ export default function Home() {
 			<section className="landing">
 				<section className="landing_content">
 					<section className="landing_text">
-						<h1>Take a Valk on the Vild Side</h1>
+						<h1>
+							Take a Valk on
+							<br />
+							the <span>Vild</span> Side
+						</h1>
 						<h3>From the Mind and Hand of Adrian van der Valk</h3>
 					</section>
 
@@ -152,23 +156,32 @@ const StyledHome = styled.div`
 		align-items: center;
 		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 		height: calc(var(--vh, 1vh) * 100);
-		border: 1px solid red;
 	}
 	.landing_content {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		height: 85%;
-		border: 1px solid red;
 		margin-top: 8%;
 	}
 	.landing_text {
-		width: 80%;
+		width: 100%;
 	}
 	.landing_text h1 {
 		font-family: "Lobster", cursive;
 		text-align: left;
 		font-size: 5rem;
+	}
+	h1 span {
+		/* background-color: #f3ec78; */
+		padding: 0 3.5px 0 1px;
+		font-size: 5rem;
+		background-image: linear-gradient(160deg, #ff5cc8, #aa44fa, #4a2dff);
+		background-size: 100%;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-moz-text-fill-color: transparent;
 	}
 	.landing_text h3 {
 		font-size: 2rem;
