@@ -266,7 +266,7 @@ const StyledHome = styled.div`
 	.card,
 	.card_wide {
 		width: 100%;
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 		border-radius: 4rem;
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 	}
