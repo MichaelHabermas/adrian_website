@@ -172,6 +172,7 @@ const StyledHome = styled.div`
 		text-align: left;
 		font-size: 5rem;
 	}
+
 	h1 span {
 		padding: 0 3.5px 0 1px;
 		font-size: 5rem;
