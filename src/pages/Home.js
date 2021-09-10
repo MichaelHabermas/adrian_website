@@ -7,6 +7,7 @@ import {
 	top_chars,
 	body_chars,
 	wide_chars,
+	social_icons,
 } from "../assets/index";
 import gallery_background from "../assets/gallery_background.png";
 
@@ -32,28 +33,60 @@ export default function Home() {
 					<section className="landing_images">
 						<img className="hero" src={hero_img} alt="card_pic" />
 						<section className="lead_pics">
-							{lead_chars.map(card => {
-								return <img className="lead_card" src={card} alt="card_pic" />;
+							{lead_chars.map((card, idx) => {
+								return (
+									<img
+										key={idx}
+										className="lead_card"
+										src={card}
+										alt="card_pic"
+									/>
+								);
 							})}
 						</section>
 					</section>
 
 					<section className="socials_container">
 						<div className="social_links">
-							<a href="#" className="icon instaIcon">
-								<i className="fab fa-instagram"></i>
+							<a
+								href="https://www.instagram.com/riddlemeanade/"
+								className="icon instaIcon"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={social_icons.instagram} alt="facebook" />
 							</a>
-							<a href="#" className="icon youtubeIcon">
-								<i className="fab fa-youtube"></i>
+							<a
+								href="https://www.youtube.com/channel/UCAVKC66zJeJZ0MzWfCl0U6A/featured"
+								className="icon youtubeIcon"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={social_icons.youtube} alt="youtube" />
 							</a>
-							<a href="#" className="icon linkedinIcon">
-								<i className="fab fa-linkedin"></i>
+							<a
+								href="https://www.linkedin.com/in/adrian-van-der-valk-40a387b8/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABj43YoB7LoxDTJ_jktvbhwCGZDalV6zCe0"
+								className="icon linkedinIcon"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={social_icons.linkedin} alt="linkedin" />
 							</a>
-							<a href="#" className="icon facebookIcon">
-								<i className="fab fa-facebook-square"></i>
+							<a
+								href="https://www.facebook.com/adrian.vandervalk"
+								className="icon facebookIcon"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={social_icons.facebook} alt="facebook" />
 							</a>
-							<a href="#" className="icon twitterIcon">
-								<i className="fab fa-twitter-square"></i>
+							<a
+								href="https://www.instagram.com/riddlemeanade/"
+								className="icon twitterIcon"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={social_icons.twitter} alt="twitter" />
 							</a>
 						</div>
 					</section>
@@ -64,8 +97,10 @@ export default function Home() {
 				<section className="gallery_container">
 					<h2>Gallery</h2>
 					<section className="top_pics">
-						{top_chars.map(card => {
-							return <img className="card" src={card} alt="card_pic" />;
+						{top_chars.map((card, idx) => {
+							return (
+								<img key={idx} className="card" src={card} alt="card_pic" />
+							);
 						})}
 					</section>
 
@@ -79,8 +114,10 @@ export default function Home() {
 					</section>
 
 					<section className="body_of_images">
-						{body_chars.map(card => {
-							return <img className="card" src={card} alt="card_pic" />;
+						{body_chars.map((card, idx) => {
+							return (
+								<img key={idx} className="card" src={card} alt="card_pic" />
+							);
 						})}
 					</section>
 
@@ -92,17 +129,13 @@ export default function Home() {
 						/>
 					</section>
 				</section>
+				<footer>Copyright &copy; 2021 Adrian van der Valk</footer>
 			</section>
-			<footer>Copyright &copy; 2021 Adrian van der Valk</footer>
 		</StyledHome>
 	);
 }
 
 const StyledHome = styled.div`
-	h1 {
-		font-family: "Lobster", cursive;
-	}
-
 	.landing,
 	.gallery_container,
 	footer {
@@ -114,26 +147,28 @@ const StyledHome = styled.div`
 	.landing {
 		display: flex;
 		align-items: center;
-		/* border: 1px solid black; */
 		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 		height: calc(var(--vh, 1vh) * 100);
 	}
-    .landing_content{
-        display: flex;
+	.landing_content {
+		display: flex;
 		flex-direction: column;
-        align-items: center;
 		justify-content: space-between;
-        height: 80%;
-        
+		height: 80%;
+
 		border: 1px solid black;
-    }
+	}
 	.landing_text {
-		margin: 10% 0 5%;
+		width: 80%;
+		border: 1px solid orange;
 	}
 	.landing_text h1 {
+		font-family: "Lobster", cursive;
 		text-align: left;
+		margin: 20% 0 5%;
 	}
 	.landing_text h3 {
+		font-size: 2rem;
 		text-align: left;
 	}
 
@@ -141,28 +176,29 @@ const StyledHome = styled.div`
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
-		justify-content: space-evenly;
+		justify-content: space-between;
+		height: 50%;
 		border: 1px solid red;
 	}
 	.hero {
 		object-fit: cover;
-		width: 60%;
 		height: 100%;
+		border-radius: 5%;
 	}
 	.lead_pics {
 		display: flex;
 		flex-direction: column;
-		width: 20%;
 		height: 100%;
+		width: 20%;
 		align-items: center;
 		justify-content: space-between;
 		border: 1px solid blue;
 	}
 	.lead_card {
-		object-fit: cover;
 		width: 100%;
-		height: auto;
+		border-radius: 5%;
 	}
+
 	.socials_container,
 	.social_links,
 	.icon,
@@ -170,18 +206,23 @@ const StyledHome = styled.div`
 	.youtubeIcon,
 	.linkedinIcon,
 	.facebookIcon,
-	.twitterIcon {border: 1px solid green;}
+	.twitterIcon {
+		border: 1px solid green;
 	}
-	.socials_container {
-		display: flex;
-        align-items: center;
-        justify-content: center;
-	}
+
+	.socials_container,
 	.social_links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
 	}
 	.icon {
-		width: 50px;
-		height: 50px;
+		margin: 0 2%;
+	}
+
+	.icon img {
+		width: 100%;
 	}
 
 	// BODY Section
@@ -226,6 +267,8 @@ const StyledHome = styled.div`
 
 	// FOOTER
 	footer {
+		text-align: right;
+		padding: 2% 0;
 	}
 
 	// MEDIA QUERIES

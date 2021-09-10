@@ -37,6 +37,13 @@ import char20 from "./char_images/char_20.png";
 import mermaid from "./char_images/mermaid.png";
 import breakfast_club from "./char_images/breakfast_club.png";
 
+// SOCIAL ICONS
+import instagram from "./social_icons/instagramIcon.png";
+import facebook from "./social_icons/facebookIcon.png";
+import twitter from "./social_icons/twitterIcon.png";
+import youtube from "./social_icons/youtubeIcon.png";
+import linkedin from "./social_icons/linkedinIcon.png";
+
 const lead_chars = [char_lead_1, char_lead_2, char_lead_3];
 const top_chars = [char_top_1, char_top_2, char_top_3, char_top_4];
 const body_chars = [
@@ -62,5 +69,19 @@ const body_chars = [
 	char20,
 ];
 const wide_chars = { mermaid: mermaid, breakfast_club: breakfast_club };
+const social_icons = {
+	instagram: instagram,
+	facebook: facebook,
+	twitter: twitter,
+	youtube: youtube,
+	linkedin: linkedin,
+};
 
-export { hero_img, lead_chars, top_chars, body_chars, wide_chars };
+export {
+	hero_img,
+	lead_chars,
+	top_chars,
+	body_chars,
+	wide_chars,
+	social_icons,
+};
