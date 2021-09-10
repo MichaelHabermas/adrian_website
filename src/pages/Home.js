@@ -198,7 +198,7 @@ const StyledHome = styled.div`
 		justify-content: space-between;
 	}
 	.lead_card {
-		width: 100%;
+		height: 32%;
 		border-radius: 5%;
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 	}
