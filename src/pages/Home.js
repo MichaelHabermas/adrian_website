@@ -153,16 +153,16 @@ const StyledHome = styled.div`
 	// Landing Section
 	.landing {
 		display: flex;
-		align-items: center;
+		align-items: flex-end;
 		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 		height: calc(var(--vh, 1vh) * 100);
 	}
 	.landing_content {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		height: 85%;
-		margin-top: 8%;
+		justify-content: space-evenly;
+		height: 90%;
+		/* border: 1px solid black; */
 	}
 	.landing_text {
 		width: 100%;
@@ -171,6 +171,7 @@ const StyledHome = styled.div`
 		font-family: "Lobster", cursive;
 		text-align: left;
 		font-size: 5rem;
+		line-height: 1;
 	}
 
 	h1 span {
@@ -244,6 +245,8 @@ const StyledHome = styled.div`
 		text-align: center;
 		font-size: 6rem;
 		padding: 2rem;
+	}
+	.gallery_container h2 {
 	}
 
 	.card,
