@@ -157,8 +157,10 @@ const StyledHome = styled.div`
 	.landing_content {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: space-between;
 		height: 85%;
+		border: 1px solid red;
+		margin-top: 8%;
 	}
 	.landing_text {
 		width: 80%;
