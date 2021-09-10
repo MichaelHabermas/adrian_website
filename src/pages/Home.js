@@ -286,7 +286,9 @@ const StyledHome = styled.div`
 			width: 49%;
 		}
 	}
-	@media screen and (orientation: landscape) and (max-device-width: 700px) {
+	@media screen and (orientation: landscape) {
+		/* height: 100vh; Fallback for browsers that do not support Custom Properties */
+		height: calc(var(--vh, 1vh) * 200);
 	}
 	@media screen and (min-width: 768px) {
 	}
