@@ -10,13 +10,7 @@
 	overflow-x: hidden;
 }
 header {
-	border: 1px dotted blue;
 	width: 100%;
-}
-h1 {
-	border: 1px dotted yellow;
-	font-size: 4rem;
-	text-align: center;
 }
 
 @media screen and (min-width: 480px) {

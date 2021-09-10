@@ -158,7 +158,7 @@ const StyledHome = styled.div`
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		height: 100%;
+		height: 85%;
 	}
 	.landing_text {
 		width: 80%;
@@ -166,6 +166,7 @@ const StyledHome = styled.div`
 	.landing_text h1 {
 		font-family: "Lobster", cursive;
 		text-align: left;
+		font-size: 5rem;
 		/* margin: 20% 0 5%; */
 	}
 	.landing_text h3 {
