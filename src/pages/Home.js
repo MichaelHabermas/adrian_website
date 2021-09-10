@@ -10,6 +10,8 @@ import {
 	social_icons,
 } from "../assets/index";
 import gallery_background from "../assets/gallery_background.png";
+// import gallery_sign from "../assets/sub_t_gallery.png";
+import gallery_sign from "../assets/sub_t_revelry.png";
 
 export default function Home() {
 	if (!body_chars || !top_chars || !lead_chars || !wide_chars) {
@@ -99,7 +101,13 @@ export default function Home() {
 
 			<section className="gallery">
 				<section className="gallery_container">
-					<h2>Gallery</h2>
+					<div className="gallery_sign_container">
+						<img
+							className="gallery_sign"
+							src={gallery_sign}
+							alt="gallery_sign"
+						/>
+					</div>
 					<section className="top_pics">
 						{top_chars.map((card, idx) => {
 							return (
@@ -107,7 +115,6 @@ export default function Home() {
 							);
 						})}
 					</section>
-
 					<section className="mermaid">
 						<img
 							className="card_wide"
@@ -116,7 +123,6 @@ export default function Home() {
 						/>
 						;
 					</section>
-
 					<section className="body_of_images">
 						{body_chars.map((card, idx) => {
 							return (
@@ -124,7 +130,6 @@ export default function Home() {
 							);
 						})}
 					</section>
-
 					<section className="final_img">
 						<img
 							className="card_wide"
@@ -162,7 +167,6 @@ const StyledHome = styled.div`
 		flex-direction: column;
 		justify-content: space-evenly;
 		height: 90%;
-		/* border: 1px solid black; */
 	}
 	.landing_text {
 		width: 100%;
@@ -240,7 +244,17 @@ const StyledHome = styled.div`
 	.gallery {
 		background-image: url(${gallery_background});
 	}
-
+	.gallery_sign_container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.gallery_sign {
+		width: 70%;
+		margin: 1.5rem 0 2rem;
+		border-radius: 100px;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	}
 	.gallery_container h2 {
 		font-family: "Lobster", cursive;
 		text-align: center;
@@ -277,10 +291,6 @@ const StyledHome = styled.div`
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
-	}
-	.mermaid {
-	}
-	.final_img {
 	}
 
 	// FOOTER

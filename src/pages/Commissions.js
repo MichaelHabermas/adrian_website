@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 // pages
-import commissions_page_mobile from "../assets/commissions_page_mobile.png";
-import commissions_page_desktop from "../assets/commissions_page_desktop.png";
-import commissions_page_desktop_wide from "../assets/commissions_page_desktop_wide.png";
+import commissions_page_mobile from "../assets/commission_page/commissions_page_mobile.png";
+import commissions_page_desktop from "../assets/commission_page/commissions_page_desktop.png";
+import commissions_page_desktop_wide from "../assets/commission_page/commissions_page_desktop_wide.png";
 
 export default function Commissions() {
 	return (
