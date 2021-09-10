@@ -296,7 +296,8 @@ const StyledHome = styled.div`
 	// FOOTER
 	footer {
 		text-align: right;
-		padding: 2% 0;
+		padding-bottom: 3%;
+		font-size: 1.3rem;
 	}
 
 	// MEDIA QUERIES
@@ -304,6 +305,8 @@ const StyledHome = styled.div`
 		.card {
 			width: 49%;
 		}
+	}
+	@media screen and (orientation: landscape) and (max-device-width: 700px) {
 	}
 	@media screen and (min-width: 768px) {
 	}
