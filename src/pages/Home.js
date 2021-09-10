@@ -167,11 +167,11 @@ const StyledHome = styled.div`
 		font-family: "Lobster", cursive;
 		text-align: left;
 		font-size: 5rem;
-		/* margin: 20% 0 5%; */
 	}
 	.landing_text h3 {
 		font-size: 2rem;
 		text-align: left;
+		width: 80%;
 	}
 
 	.landing_images {
