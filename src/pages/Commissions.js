@@ -31,6 +31,8 @@ export default function Commissions() {
 }
 
 const StyledCommissions = styled.div`
+	position: absolute;
+	top: 0;
 	.contact_info {
 		text-align: center;
 		font-size: 2rem;

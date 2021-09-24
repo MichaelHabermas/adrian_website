@@ -18,6 +18,7 @@ export default function Home() {
 		return <h1>Loading...</h1>;
 	}
 
+	// For iOS mobile sizings:
 	// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 	let vh = window.innerHeight * 0.01;
 	// Then we set the value in the --vh custom property to the root of the document
@@ -25,8 +26,8 @@ export default function Home() {
 
 	return (
 		<StyledHome>
-			<section className="landing">
-				<section className="landing_content">
+			<div className="landing">
+				<div className="mobile">
 					<section className="landing_text">
 						<h1>
 							Take a Valk on
@@ -51,53 +52,86 @@ export default function Home() {
 							})}
 						</section>
 					</section>
+				</div>
 
-					<section className="socials_container">
-						<div className="social_links">
-							<a
-								href="https://www.instagram.com/riddlemeanade/"
-								className="icon instaIcon"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<img src={social_icons.instagram} alt="facebook" />
-							</a>
-							<a
-								href="https://www.youtube.com/channel/UCAVKC66zJeJZ0MzWfCl0U6A/featured"
-								className="icon youtubeIcon"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<img src={social_icons.youtube} alt="youtube" />
-							</a>
-							<a
-								href="https://www.linkedin.com/in/adrian-van-der-valk-40a387b8/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABj43YoB7LoxDTJ_jktvbhwCGZDalV6zCe0"
-								className="icon linkedinIcon"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<img src={social_icons.linkedin} alt="linkedin" />
-							</a>
-							<a
-								href="https://www.facebook.com/adrian.vandervalk"
-								className="icon facebookIcon"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<img src={social_icons.facebook} alt="facebook" />
-							</a>
-							<a
-								href="https://www.instagram.com/riddlemeanade/"
-								className="icon twitterIcon"
-								target="_blank"
-								rel="noreferrer"
-							>
-								<img src={social_icons.twitter} alt="twitter" />
-							</a>
-						</div>
+				<div className="desktop">
+					<section className="dt_landing">
+						<section className="left_landing">
+							<div className="dt_title">
+								<h1>
+									Take a Valk on
+									<br />
+									the <span>Vild</span> Side
+								</h1>
+							</div>
+							<div className="dt_sub_title">
+								<h3>From the Mind and Hand of Adrian van der Valk</h3>
+							</div>
+							<div className="dt_sub_imgs_container">
+								{lead_chars.map((card, idx) => {
+									return (
+										<img
+											key={idx}
+											className="lead_card"
+											src={card}
+											alt="card_pic"
+										/>
+									);
+								})}
+							</div>
+						</section>
+						<section className="right_landing">
+							<div className="dt_hero_img_container">
+								<img className="hero" src={hero_img} alt="card_pic" />
+							</div>
+						</section>
 					</section>
+				</div>
+				<section className="socials_container">
+					<div className="social_links">
+						<a
+							href="https://www.instagram.com/riddlemeanade/"
+							className="icon instaIcon"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img src={social_icons.instagram} alt="facebook" />
+						</a>
+						<a
+							href="https://www.youtube.com/channel/UCAVKC66zJeJZ0MzWfCl0U6A/featured"
+							className="icon youtubeIcon"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img src={social_icons.youtube} alt="youtube" />
+						</a>
+						<a
+							href="https://www.linkedin.com/in/adrian-van-der-valk-40a387b8/?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABj43YoB7LoxDTJ_jktvbhwCGZDalV6zCe0"
+							className="icon linkedinIcon"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img src={social_icons.linkedin} alt="linkedin" />
+						</a>
+						<a
+							href="https://www.facebook.com/adrian.vandervalk"
+							className="icon facebookIcon"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img src={social_icons.facebook} alt="facebook" />
+						</a>
+						<a
+							href="https://www.instagram.com/riddlemeanade/"
+							className="icon twitterIcon"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img src={social_icons.twitter} alt="twitter" />
+						</a>
+					</div>
 				</section>
-			</section>
+			</div>
 
 			<section className="gallery">
 				<section className="gallery_container">
@@ -158,15 +192,23 @@ const StyledHome = styled.div`
 	// Landing Section
 	.landing {
 		display: flex;
-		align-items: flex-end;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 		height: calc(var(--vh, 1vh) * 100);
+		border: 1px solid black;
 	}
-	.landing_content {
+	.mobile {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
-		height: 90%;
+		height: 80%;
+		border: 1px solid blue;
+	}
+	.desktop {
+		display: none;
+		border: 1px solid blue;
 	}
 	.landing_text {
 		width: 100%;
@@ -201,9 +243,10 @@ const StyledHome = styled.div`
 		flex-direction: row-reverse;
 		align-items: center;
 		justify-content: space-between;
-		height: 50%;
-		width: 90%;
-		margin: 0 auto;
+		height: 49%;
+		/* width: 90%; */
+		/* margin: 0 auto; */
+		border: 1px solid red;
 	}
 	.hero {
 		object-fit: cover;
@@ -224,14 +267,17 @@ const StyledHome = styled.div`
 		border-radius: 5%;
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 	}
-
 	.socials_container,
 	.social_links {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 90%;
+		width: 70%;
 		margin: 0 auto;
+		border: 1px solid green;
+	}
+	.socials_container {
+		width: 100%;
 	}
 	.icon {
 		margin: 0 2%;
@@ -280,10 +326,34 @@ const StyledHome = styled.div`
 		font-size: 1.3rem;
 	}
 
+	// DESKTOP CHANGES
+
 	// MEDIA QUERIES
 	@media screen and (min-width: 480px) {
+		.mobile {
+			display: none;
+		}
+		.desktop {
+			display: block;
+			/* height: 100vh; */
+		}
+		.dt_landing {
+			display: flex;
+		}
+		.left_landing {
+			width: 50%;
+		}
+		.right_landing {
+			width: 50%;
+		}
 		.card {
 			width: 49%;
+		}
+		.lead_card {
+			width: 30%;
+		}
+		.hero {
+			width: 80%;
 		}
 	}
 	@media screen and (orientation: landscape) and (max-device-width: 800px) {
