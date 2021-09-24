@@ -326,8 +326,6 @@ const StyledHome = styled.div`
 		font-size: 1.3rem;
 	}
 
-	// DESKTOP CHANGES
-
 	// MEDIA QUERIES
 	@media screen and (min-width: 480px) {
 		.mobile {
