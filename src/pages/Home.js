@@ -180,7 +180,7 @@ export default function Home() {
 
 const StyledHome = styled.div`
 	* {
-		/* overflow: visible; */
+		overflow: visible;
 	}
 
 	.landing,
@@ -188,6 +188,9 @@ const StyledHome = styled.div`
 	footer {
 		width: 90%;
 		margin: 0 auto;
+	}
+	.landing {
+		/* width: 90%; */
 	}
 
 	// Landing Section
@@ -250,11 +253,11 @@ const StyledHome = styled.div`
 		overflow: visible;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 	.landing_images {
 		flex-direction: row-reverse;
-		height: 49%;
+		height: 55%;
 		/* border: 1px solid red; */
 	}
 	.hero {
