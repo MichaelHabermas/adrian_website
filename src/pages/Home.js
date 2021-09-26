@@ -281,6 +281,7 @@ const StyledHome = styled.div`
 		align-items: center;
 		justify-content: center;
 		width: 70%;
+		height: 15%;
 		margin: 0 auto;
 	}
 	.socials_container {
