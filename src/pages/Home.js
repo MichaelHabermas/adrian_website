@@ -179,19 +179,11 @@ export default function Home() {
 }
 
 const StyledHome = styled.div`
-	* {
-		/* overflow: visible; */
-	}
-
 	.landing,
 	.gallery_container,
 	footer {
 		width: 90%;
 		margin: 0 auto;
-	}
-	.landing {
-		/* width: 90%; */
-		/* overflow: initial; */
 	}
 
 	// Landing Section
