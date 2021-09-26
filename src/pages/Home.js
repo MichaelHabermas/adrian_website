@@ -257,7 +257,7 @@ const StyledHome = styled.div`
 		flex-direction: row-reverse;
 		justify-content: space-between;
 		width: 100%;
-		height: 51%;
+		height: 55%;
 	}
 	.hero {
 		object-fit: cover;
