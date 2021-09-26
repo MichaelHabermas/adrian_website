@@ -222,17 +222,16 @@ const StyledHome = styled.div`
 	h1 span,
 	.dt_title {
 		font-family: "Lobster", cursive, sans-serif;
+		font-size: 4.5rem;
 	}
 	.landing_text h1 {
 		text-align: left;
-		font-size: 4rem;
 		line-height: 1;
 		padding-left: 1%;
-		margin-top: 20%;
+		margin-top: 15%;
 	}
 	h1 span {
 		padding: 0 3.5px 0 1px;
-		font-size: 4rem;
 		background-image: linear-gradient(160deg, #ff5cc8, #aa44fa, #4a2dff);
 		background-size: 100%;
 		-webkit-background-clip: text;
