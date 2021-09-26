@@ -209,7 +209,7 @@ const StyledHome = styled.div`
 		justify-content: space-around;
 		align-items: center;
 		width: 100%;
-		height: 90%;
+		height: 85%;
 	}
 	.desktop {
 		display: none;
@@ -224,7 +224,7 @@ const StyledHome = styled.div`
 		font-size: 5rem;
 		line-height: 1;
 		padding-left: 1%;
-		margin-top: 15%;
+		margin-top: 20%;
 	}
 	h1 span,
 	.dt_title {
