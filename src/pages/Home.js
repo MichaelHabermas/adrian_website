@@ -189,10 +189,10 @@ const StyledHome = styled.div`
 		margin: 0 auto;
 	}
 
-	.mobile,
+	/* .mobile,
 	.mobile > * {
 		border: 1px solid blue;
-	}
+	} */
 
 	// Landing Section
 	.landing {
