@@ -417,6 +417,15 @@ const StyledHome = styled.div`
 		}
 	}
 	@media screen and (orientation: landscape) and (max-device-width: 850px) {
+		.desktop {
+			/* display: flex;
+			align-items: flex-end; */
+		}
+		.dt_landing {
+			/* display: flex;
+			justify-content: space-between; */
+			height: 80%;
+		}
 		.dt_title h1,
 		.dt_title h1 span {
 			font-size: 3rem;
