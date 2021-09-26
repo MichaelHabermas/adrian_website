@@ -34,6 +34,8 @@ export default function Home() {
 							<br />
 							the <span>Vild</span> Side
 						</h1>
+					</section>
+					<section className="landing_text">
 						<h3>From the Mind and Hand of Adrian van der Valk</h3>
 					</section>
 
@@ -221,6 +223,7 @@ const StyledHome = styled.div`
 		font-size: 5rem;
 		line-height: 1;
 		padding-left: 1%;
+		margin-top: 15%;
 	}
 	h1 span,
 	.dt_title {
