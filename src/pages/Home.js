@@ -192,7 +192,7 @@ const StyledHome = styled.div`
 	.social_links,
 	.mobile,
 	.mobile > * {
-		border: 1px solid blue;
+		/* border: 1px solid blue; */
 	}
 
 	// Landing Section
@@ -229,7 +229,7 @@ const StyledHome = styled.div`
 		text-align: left;
 		line-height: 1;
 		padding-left: 1%;
-		margin-top: 20%;
+		margin-top: 25%;
 	}
 	h1 span {
 		padding: 0 3.5px 0 1px;
