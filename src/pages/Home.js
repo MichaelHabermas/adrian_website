@@ -180,7 +180,7 @@ export default function Home() {
 
 const StyledHome = styled.div`
 	* {
-		overflow: visible;
+		/* overflow: visible; */
 	}
 
 	.landing,
@@ -191,6 +191,7 @@ const StyledHome = styled.div`
 	}
 	.landing {
 		/* width: 90%; */
+		/* overflow: initial; */
 	}
 
 	// Landing Section
