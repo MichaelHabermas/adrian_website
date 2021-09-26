@@ -10,6 +10,7 @@ import {
 	social_icons,
 } from "../assets/index";
 import gallery_background from "../assets/gallery_background.png";
+import gallery_background_wide from "../assets/gallery_background_wide.png";
 // import gallery_sign from "../assets/sub_t_gallery.png";
 import gallery_sign from "../assets/sub_t_revelry.png";
 
@@ -196,7 +197,7 @@ const StyledHome = styled.div`
 	.dt_landing > *,
 	.left_landing > *,
 	.right_landing > * {
-		border: 1px solid blue;
+		/* border: 1px solid blue; */
 	}
 
 	// Landing Section
@@ -286,11 +287,11 @@ const StyledHome = styled.div`
 		align-items: center;
 		justify-content: center;
 		width: 70%;
-		height: 10%;
 		margin: 0 auto;
 	}
 	.socials_container {
 		width: 100%;
+		height: 10%;
 	}
 	.icon {
 		margin: 0 2%;
@@ -341,53 +342,78 @@ const StyledHome = styled.div`
 
 	// MEDIA QUERIES
 	@media screen and (min-width: 480px) {
+		.landing {
+			justify-content: center;
+		}
 		.mobile {
 			display: none;
 		}
 		.desktop {
-			display: block;
+			display: flex;
+			align-items: flex-end;
 		}
 		.dt_landing {
 			display: flex;
-			align-items: center;
 			justify-content: space-between;
-			height: 100%;
-		}
-		.left_landing,
-		.right_landing {
-			width: 48%;
+			height: 87%;
 		}
 		.left_landing {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			align-items: space-between;
+			width: 60%;
 			height: 100%;
 		}
-		.right_landing {
-			display: flex;
-			align-items: flex-end;
-			justify-content: flex-end;
-		}
-		.dt_title {
-			font-size: 6rem;
+
+		.dt_title h1,
+		.dt_title h1 span {
+			font-size: 6.5rem;
 		}
 		.dt_sub_title {
-			font-size: 3rem;
+			font-size: 3.5rem;
 		}
 		.dt_sub_imgs_container {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 		}
+		.lead_card {
+			width: 30%;
+			height: 100%;
+		}
+		.right_landing {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			width: 40%;
+		}
+		.dt_hero_img_container {
+			height: 100%;
+		}
+		.hero {
+			width: 100%;
+		}
+
+		.socials_container,
+		.social_links {
+			width: 100%;
+			height: 20%;
+		}
+		.socials_container {
+		}
+		.social_links {
+			width: 50%;
+			height: 100%;
+		}
+		.icon {
+			margin: 0 5%;
+		}
+
 		.card {
 			width: 49%;
 		}
-		.lead_card {
-			width: 30%;
-		}
-		.hero {
-			width: 80%;
+		.gallery {
+			background-image: url(${gallery_background_wide});
 		}
 	}
 	@media screen and (orientation: landscape) and (max-device-width: 800px) {
@@ -410,6 +436,13 @@ const StyledHome = styled.div`
 		.gallery_container,
 		footer {
 			width: 80%;
+		}
+		.dt_title h1,
+		.dt_title h1 span {
+			font-size: 8rem;
+		}
+		.dt_sub_title {
+			font-size: 5rem;
 		}
 	}
 	@media screen and (min-width: 1400px) {
