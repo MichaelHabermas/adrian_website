@@ -189,6 +189,11 @@ const StyledHome = styled.div`
 		margin: 0 auto;
 	}
 
+	.mobile,
+	.mobile > * {
+		border: 1px solid blue;
+	}
+
 	// Landing Section
 	.landing {
 		display: flex;
@@ -197,7 +202,6 @@ const StyledHome = styled.div`
 		justify-content: space-space-around;
 		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 		height: calc(var(--vh, 1vh) * 100);
-		/* border: 1px solid black; */
 	}
 	.mobile {
 		display: flex;
@@ -206,16 +210,13 @@ const StyledHome = styled.div`
 		align-items: center;
 		width: 100%;
 		height: 90%;
-		border: 1px solid blue;
 	}
 	.desktop {
 		display: none;
-		border: 1px solid blue;
 	}
 
 	.landing_text {
 		width: 100%;
-		border: 1px solid blue;
 	}
 	.landing_text h1 {
 		font-family: "Lobster", cursive;
@@ -251,13 +252,11 @@ const StyledHome = styled.div`
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		border: 1px solid blue;
 	}
 	.landing_images {
 		flex-direction: row-reverse;
 		width: 100%;
 		height: 50%;
-		border: 1px solid green;
 	}
 	.hero {
 		object-fit: cover;
@@ -283,7 +282,6 @@ const StyledHome = styled.div`
 		justify-content: center;
 		width: 70%;
 		margin: 0 auto;
-		border: 1px solid rebeccapurple;
 	}
 	.socials_container {
 		width: 100%;
@@ -353,7 +351,6 @@ const StyledHome = styled.div`
 		.left_landing,
 		.right_landing {
 			width: 48%;
-			/* border: 1px solid yellow; */
 		}
 		.left_landing {
 			display: flex;
@@ -368,15 +365,12 @@ const StyledHome = styled.div`
 			justify-content: flex-end;
 		}
 		.dt_title {
-			/* border: 1px solid red; */
 			font-size: 6rem;
 		}
 		.dt_sub_title {
-			/* border: 1px solid red; */
 			font-size: 3rem;
 		}
 		.dt_sub_imgs_container {
-			/* border: 1px solid red; */
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
