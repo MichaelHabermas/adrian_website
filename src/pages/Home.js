@@ -194,7 +194,7 @@ const StyledHome = styled.div`
 		justify-content: center;
 		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 		height: calc(var(--vh, 1vh) * 100);
-		border: 1px solid black;
+		/* border: 1px solid black; */
 	}
 	.mobile {
 		display: flex;
@@ -202,11 +202,11 @@ const StyledHome = styled.div`
 		justify-content: space-evenly;
 		width: 100%;
 		height: 70%;
-		border: 1px solid blue;
+		/* border: 1px solid blue; */
 	}
 	.desktop {
 		display: none;
-		border: 1px solid red;
+		/* border: 1px solid red; */
 	}
 
 	.landing_text {
@@ -249,8 +249,8 @@ const StyledHome = styled.div`
 	}
 	.landing_images {
 		flex-direction: row-reverse;
-		height: 55%;
-		border: 1px solid green;
+		height: 71%;
+		/* border: 1px solid green; */
 	}
 	.hero {
 		object-fit: cover;
@@ -276,7 +276,7 @@ const StyledHome = styled.div`
 		justify-content: center;
 		width: 70%;
 		margin: 0 auto;
-		border: 1px solid rebeccapurple;
+		/* border: 1px solid rebeccapurple; */
 	}
 	.socials_container {
 		width: 100%;
