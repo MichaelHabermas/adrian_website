@@ -424,7 +424,7 @@ const StyledHome = styled.div`
 		.dt_landing {
 			/* display: flex;
 			justify-content: space-between; */
-			height: 80%;
+			height: 60%;
 		}
 		.dt_title h1,
 		.dt_title h1 span {
