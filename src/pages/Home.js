@@ -200,7 +200,7 @@ const StyledHome = styled.div`
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
-		height: 80%;
+		height: 70%;
 		/* border: 1px solid blue; */
 	}
 	.desktop {
@@ -223,7 +223,6 @@ const StyledHome = styled.div`
 	.dt_title {
 		font-family: "Lobster", cursive, sans-serif;
 	}
-
 	h1 span {
 		padding: 0 3.5px 0 1px;
 		font-size: 5rem;
@@ -269,6 +268,7 @@ const StyledHome = styled.div`
 		border-radius: 5%;
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 	}
+
 	.socials_container,
 	.social_links {
 		display: flex;
@@ -284,7 +284,6 @@ const StyledHome = styled.div`
 	.icon {
 		margin: 0 2%;
 	}
-
 	.icon img {
 		width: 100%;
 	}
