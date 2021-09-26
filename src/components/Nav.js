@@ -72,6 +72,13 @@ const NavStyle = styled.div`
 
 	// OLD MEDIA QUERIES
 	@media screen and (min-width: 480px) {
+		.link-text {
+			font-size: 2rem;
+			margin-left: 6rem;
+		}
+		nav h2 {
+			font-size: 3.5rem;
+		}
 	}
 	@media screen and (min-width: 768px) {
 	}
@@ -82,6 +89,13 @@ const NavStyle = styled.div`
 	@media screen and (min-width: 1300px) {
 		nav {
 			width: 80%;
+		}
+		nav h2 {
+			font-size: 4.5rem;
+		}
+		.link-text {
+			font-size: 2.5rem;
+			margin-left: 6rem;
 		}
 	}
 	@media screen and (min-width: 1400px) {
