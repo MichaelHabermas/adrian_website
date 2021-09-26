@@ -180,7 +180,7 @@ export default function Home() {
 
 const StyledHome = styled.div`
 	* {
-		overflow: visible;
+		/* overflow: visible; */
 	}
 
 	.landing,
