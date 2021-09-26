@@ -218,21 +218,21 @@ const StyledHome = styled.div`
 	.landing_text {
 		width: 100%;
 	}
-	.landing_text h1 {
-		font-family: "Lobster", cursive;
-		text-align: left;
-		font-size: 5rem;
-		line-height: 1;
-		padding-left: 1%;
-		margin-top: 20%;
-	}
+	.landing_text h1,
 	h1 span,
 	.dt_title {
 		font-family: "Lobster", cursive, sans-serif;
 	}
+	.landing_text h1 {
+		text-align: left;
+		font-size: 4rem;
+		line-height: 1;
+		padding-left: 1%;
+		margin-top: 20%;
+	}
 	h1 span {
 		padding: 0 3.5px 0 1px;
-		font-size: 5rem;
+		font-size: 4rem;
 		background-image: linear-gradient(160deg, #ff5cc8, #aa44fa, #4a2dff);
 		background-size: 100%;
 		-webkit-background-clip: text;
@@ -241,7 +241,7 @@ const StyledHome = styled.div`
 		-moz-text-fill-color: transparent;
 	}
 	.landing_text h3 {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		text-align: left;
 		width: 80%;
 		line-height: 1.3;
