@@ -87,6 +87,7 @@ export default function Home() {
 						</section>
 					</section>
 				</div>
+
 				<section className="socials_container">
 					<div className="social_links">
 						<a
@@ -191,7 +192,7 @@ const StyledHome = styled.div`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-space-around;
 		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 		height: calc(var(--vh, 1vh) * 100);
 		/* border: 1px solid black; */
@@ -202,11 +203,12 @@ const StyledHome = styled.div`
 		justify-content: space-around;
 		align-items: center;
 		width: 100%;
-		height: 80%;
-		/* border: 1px solid blue; */
+		height: 90%;
+		border: 1px solid blue;
 	}
 	.desktop {
 		display: none;
+		border: 1px solid blue;
 	}
 
 	.landing_text {
@@ -250,7 +252,7 @@ const StyledHome = styled.div`
 	}
 	.landing_images {
 		flex-direction: row-reverse;
-		height: 60%;
+		height: 50%;
 		/* border: 1px solid green; */
 	}
 	.hero {
@@ -277,11 +279,11 @@ const StyledHome = styled.div`
 		justify-content: center;
 		width: 70%;
 		margin: 0 auto;
-		/* border: 1px solid rebeccapurple; */
+		border: 1px solid rebeccapurple;
 	}
 	.socials_container {
 		width: 100%;
-		margin-top: 10%;
+		/* margin-top: 10%; */
 	}
 	.icon {
 		margin: 0 2%;
