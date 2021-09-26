@@ -67,6 +67,8 @@ const body_chars = [
 	char18,
 	char19,
 	char20,
+	char21,
+	char22,
 ];
 const wide_chars = { mermaid: mermaid, breakfast_club: breakfast_club };
 const social_icons = {
