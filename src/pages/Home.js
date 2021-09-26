@@ -248,7 +248,7 @@ const StyledHome = styled.div`
 	}
 	.landing_images {
 		flex-direction: row-reverse;
-		height: 60%;
+		height: 63%;
 		/* border: 1px solid green; */
 	}
 	.hero {
