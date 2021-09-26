@@ -188,11 +188,12 @@ const StyledHome = styled.div`
 		width: 90%;
 		margin: 0 auto;
 	}
-
-	/* .mobile,
+	.socials_container,
+	.social_links,
+	.mobile,
 	.mobile > * {
 		border: 1px solid blue;
-	} */
+	}
 
 	// Landing Section
 	.landing {
@@ -206,10 +207,10 @@ const StyledHome = styled.div`
 	.mobile {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
 		width: 100%;
-		height: 85%;
+		height: 90%;
 	}
 	.desktop {
 		display: none;
@@ -228,7 +229,7 @@ const StyledHome = styled.div`
 		text-align: left;
 		line-height: 1;
 		padding-left: 1%;
-		margin-top: 15%;
+		margin-top: 20%;
 	}
 	h1 span {
 		padding: 0 3.5px 0 1px;
@@ -242,7 +243,7 @@ const StyledHome = styled.div`
 	.landing_text h3 {
 		font-size: 1.5rem;
 		text-align: left;
-		width: 80%;
+		width: 60%;
 		line-height: 1.3;
 	}
 
@@ -281,12 +282,11 @@ const StyledHome = styled.div`
 		align-items: center;
 		justify-content: center;
 		width: 70%;
-		height: 15%;
+		height: 10%;
 		margin: 0 auto;
 	}
 	.socials_container {
 		width: 100%;
-		/* margin-top: 10%; */
 	}
 	.icon {
 		margin: 0 2%;
