@@ -199,7 +199,7 @@ const StyledHome = styled.div`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: space-space-around;
+		justify-content: space-around;
 		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 		height: calc(var(--vh, 1vh) * 100);
 	}
