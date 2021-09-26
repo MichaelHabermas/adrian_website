@@ -179,6 +179,10 @@ export default function Home() {
 }
 
 const StyledHome = styled.div`
+	* {
+		overflow: visible;
+	}
+
 	.landing,
 	.gallery_container,
 	footer {
@@ -194,19 +198,20 @@ const StyledHome = styled.div`
 		justify-content: center;
 		height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 		height: calc(var(--vh, 1vh) * 100);
-		border: 1px solid black;
+		/* border: 1px solid black; */
 	}
 	.mobile {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
 		height: 80%;
-		border: 1px solid blue;
+		/* border: 1px solid blue; */
 	}
 	.desktop {
 		display: none;
-		border: 1px solid blue;
+		/* border: 1px solid blue; */
 	}
+
 	.landing_text {
 		width: 100%;
 	}
@@ -216,6 +221,7 @@ const StyledHome = styled.div`
 		font-size: 5rem;
 		line-height: 1;
 		margin-bottom: 2rem;
+		padding-left: 1%;
 	}
 	h1 span,
 	.dt_title {
@@ -249,8 +255,7 @@ const StyledHome = styled.div`
 	.landing_images {
 		flex-direction: row-reverse;
 		height: 49%;
-		border: 1px solid red;
-		/* overflow: visible; */
+		/* border: 1px solid red; */
 	}
 	.hero {
 		object-fit: cover;
@@ -275,7 +280,7 @@ const StyledHome = styled.div`
 		justify-content: center;
 		width: 70%;
 		margin: 0 auto;
-		border: 1px solid green;
+		/* border: 1px solid green; */
 	}
 	.socials_container {
 		width: 100%;
@@ -318,6 +323,7 @@ const StyledHome = styled.div`
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
+		overflow: visible;
 	}
 
 	// FOOTER
@@ -344,7 +350,7 @@ const StyledHome = styled.div`
 		.left_landing,
 		.right_landing {
 			width: 48%;
-			border: 1px solid yellow;
+			/* border: 1px solid yellow; */
 		}
 		.left_landing {
 			display: flex;
@@ -359,15 +365,15 @@ const StyledHome = styled.div`
 			justify-content: flex-end;
 		}
 		.dt_title {
-			border: 1px solid red;
+			/* border: 1px solid red; */
 			font-size: 6rem;
 		}
 		.dt_sub_title {
-			border: 1px solid red;
+			/* border: 1px solid red; */
 			font-size: 3rem;
 		}
 		.dt_sub_imgs_container {
-			border: 1px solid red;
+			/* border: 1px solid red; */
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
