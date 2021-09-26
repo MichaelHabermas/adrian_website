@@ -258,21 +258,22 @@ const StyledHome = styled.div`
 		width: 100%;
 		height: 54%;
 	}
-	.hero {
-		object-fit: cover;
-		height: 100%;
-		border-radius: 5%;
-		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-	}
 	.lead_pics {
 		flex-direction: column-reverse;
 		height: 100%;
 		width: 20%;
 	}
+	.hero,
 	.lead_card {
-		height: 32%;
 		border-radius: 5%;
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	}
+	.hero {
+		object-fit: cover;
+		height: 100%;
+	}
+	.lead_card {
+		height: 32%;
 	}
 
 	.socials_container,
