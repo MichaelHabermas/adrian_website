@@ -32,6 +32,8 @@ import char17 from "./char_images/char_17.png";
 import char18 from "./char_images/char_18.png";
 import char19 from "./char_images/char_19.png";
 import char20 from "./char_images/char_20.png";
+import char21 from "./char_images/char_21.png";
+import char22 from "./char_images/char_22.png";
 
 // WIDE CHARS
 import mermaid from "./char_images/mermaid.png";
