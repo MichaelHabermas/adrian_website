@@ -199,14 +199,13 @@ const StyledHome = styled.div`
 	.mobile {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
+		justify-content: space-around;
 		width: 100%;
-		height: 70%;
-		/* border: 1px solid blue; */
+		height: 80%;
+		border: 1px solid blue;
 	}
 	.desktop {
 		display: none;
-		/* border: 1px solid red; */
 	}
 
 	.landing_text {
@@ -249,8 +248,8 @@ const StyledHome = styled.div`
 	}
 	.landing_images {
 		flex-direction: row-reverse;
-		height: 65%;
-		/* border: 1px solid green; */
+		height: 55%;
+		border: 1px solid green;
 	}
 	.hero {
 		object-fit: cover;
@@ -276,7 +275,7 @@ const StyledHome = styled.div`
 		justify-content: center;
 		width: 70%;
 		margin: 0 auto;
-		/* border: 1px solid rebeccapurple; */
+		border: 1px solid rebeccapurple;
 	}
 	.socials_container {
 		width: 100%;
