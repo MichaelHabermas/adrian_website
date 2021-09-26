@@ -200,6 +200,7 @@ const StyledHome = styled.div`
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
+		width: 100%;
 		height: 70%;
 		border: 1px solid blue;
 	}
@@ -242,7 +243,6 @@ const StyledHome = styled.div`
 
 	.landing_images,
 	.lead_pics {
-		overflow: visible;
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
