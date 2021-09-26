@@ -238,6 +238,7 @@ const StyledHome = styled.div`
 		text-align: left;
 		width: 80%;
 		line-height: 1.3;
+		margin-bottom: 2rem;
 	}
 
 	.landing_images,
@@ -248,7 +249,7 @@ const StyledHome = styled.div`
 	}
 	.landing_images {
 		flex-direction: row-reverse;
-		height: 63%;
+		height: 65%;
 		/* border: 1px solid green; */
 	}
 	.hero {
