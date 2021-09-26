@@ -185,9 +185,6 @@ const StyledHome = styled.div`
 		width: 90%;
 		margin: 0 auto;
 	}
-	* {
-		overflow: visible;
-	}
 
 	// Landing Section
 	.landing {
@@ -220,6 +217,10 @@ const StyledHome = styled.div`
 		line-height: 1;
 		margin-bottom: 2rem;
 	}
+	h1 span,
+	.dt_title {
+		font-family: "Lobster", cursive, sans-serif;
+	}
 
 	h1 span {
 		padding: 0 3.5px 0 1px;
@@ -238,15 +239,18 @@ const StyledHome = styled.div`
 		line-height: 1.3;
 	}
 
-	.landing_images {
+	.landing_images,
+	.lead_pics {
+		overflow: visible;
 		display: flex;
-		flex-direction: row-reverse;
 		align-items: center;
 		justify-content: space-between;
+	}
+	.landing_images {
+		flex-direction: row-reverse;
 		height: 49%;
-		/* width: 90%; */
-		/* margin: 0 auto; */
 		border: 1px solid red;
+		/* overflow: visible; */
 	}
 	.hero {
 		object-fit: cover;
@@ -255,12 +259,9 @@ const StyledHome = styled.div`
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 	}
 	.lead_pics {
-		display: flex;
 		flex-direction: column-reverse;
 		height: 100%;
 		width: 20%;
-		align-items: center;
-		justify-content: space-between;
 	}
 	.lead_card {
 		height: 32%;
@@ -333,16 +334,43 @@ const StyledHome = styled.div`
 		}
 		.desktop {
 			display: block;
-			/* height: 100vh; */
 		}
 		.dt_landing {
 			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 100%;
+		}
+		.left_landing,
+		.right_landing {
+			width: 48%;
+			border: 1px solid yellow;
 		}
 		.left_landing {
-			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: space-between;
+			height: 100%;
 		}
 		.right_landing {
-			width: 50%;
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-end;
+		}
+		.dt_title {
+			border: 1px solid red;
+			font-size: 6rem;
+		}
+		.dt_sub_title {
+			border: 1px solid red;
+			font-size: 3rem;
+		}
+		.dt_sub_imgs_container {
+			border: 1px solid red;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
 		}
 		.card {
 			width: 49%;
@@ -370,6 +398,11 @@ const StyledHome = styled.div`
 	@media screen and (min-width: 1200px) {
 	}
 	@media screen and (min-width: 1300px) {
+		.landing,
+		.gallery_container,
+		footer {
+			width: 80%;
+		}
 	}
 	@media screen and (min-width: 1400px) {
 	}

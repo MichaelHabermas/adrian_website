@@ -80,6 +80,9 @@ const NavStyle = styled.div`
 	@media screen and (min-width: 1200px) {
 	}
 	@media screen and (min-width: 1300px) {
+		nav {
+			width: 80%;
+		}
 	}
 	@media screen and (min-width: 1400px) {
 	}
