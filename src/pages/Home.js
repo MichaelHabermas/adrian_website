@@ -213,13 +213,13 @@ const StyledHome = styled.div`
 
 	.landing_text {
 		width: 100%;
+		border: 1px solid blue;
 	}
 	.landing_text h1 {
 		font-family: "Lobster", cursive;
 		text-align: left;
 		font-size: 5rem;
 		line-height: 1;
-		margin-bottom: 2rem;
 		padding-left: 1%;
 	}
 	h1 span,
@@ -241,7 +241,6 @@ const StyledHome = styled.div`
 		text-align: left;
 		width: 80%;
 		line-height: 1.3;
-		margin-bottom: 2rem;
 	}
 
 	.landing_images,
@@ -249,6 +248,7 @@ const StyledHome = styled.div`
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
+		border: 1px solid blue;
 	}
 	.landing_images {
 		flex-direction: row-reverse;
