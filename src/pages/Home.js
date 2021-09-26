@@ -416,10 +416,13 @@ const StyledHome = styled.div`
 			background-image: url(${gallery_background_wide});
 		}
 	}
-	@media screen and (orientation: landscape) and (max-device-width: 800px) {
-		.landing {
-			height: 200vh;
-			height: calc(var(--vh, 1vh) * 200);
+	@media screen and (orientation: landscape) and (max-device-width: 850px) {
+		.dt_title h1,
+		.dt_title h1 span {
+			font-size: 3rem;
+		}
+		.dt_sub_title {
+			font-size: 2rem;
 		}
 	}
 	@media screen and (min-width: 768px) {

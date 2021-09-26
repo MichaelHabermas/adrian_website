@@ -80,6 +80,15 @@ const NavStyle = styled.div`
 			font-size: 3.5rem;
 		}
 	}
+	@media screen and (orientation: landscape) and (max-device-width: 850px) {
+		.link-text {
+			font-size: 1.5rem;
+			margin-left: 6rem;
+		}
+		nav h2 {
+			font-size: 2.5rem;
+		}
+	}
 	@media screen and (min-width: 768px) {
 	}
 	@media screen and (min-width: 1024px) {
