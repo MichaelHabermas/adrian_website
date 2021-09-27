@@ -192,11 +192,12 @@ const StyledHome = styled.div`
 	.socials_container,
 	.social_links,
 	.mobile,
-	.mobile > * .desktop,
-	.desktop > *,
-	.dt_landing > *,
-	.left_landing > *,
-	.right_landing > * {
+	.mobile *,
+	.desktop,
+	.desktop *,
+	.dt_landing *,
+	.left_landing *,
+	.right_landing * {
 		border: 1px solid blue;
 	}
 
