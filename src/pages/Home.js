@@ -418,8 +418,12 @@ const StyledHome = styled.div`
 		}
 	}
 	@media screen and (orientation: landscape) and (max-device-width: 850px) {
+		.landing {
+			height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+			height: calc(var(--vh, 1vh) * 100);
+		}
 		.landing_text h1 {
-			margin-top: 5%;
+			margin-top: 0%;
 		}
 		.dt_landing {
 			height: 80%;
@@ -433,10 +437,15 @@ const StyledHome = styled.div`
 		}
 	}
 	@media screen and (min-width: 768px) {
+		.landing {
+			height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+			height: calc(var(--vh, 1vh) * 100);
+		}
 	}
 	@media screen and (min-width: 1024px) {
 		.landing {
-			height: 100vh;
+			height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+			height: calc(var(--vh, 1vh) * 100);
 		}
 	}
 	@media screen and (min-width: 1200px) {
