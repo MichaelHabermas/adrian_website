@@ -430,7 +430,7 @@ const StyledHome = styled.div`
 			margin-top: 0%;
 		}
 		.dt_landing {
-			height: 70%;
+			height: 100%;
 		}
 		.dt_title h1,
 		.dt_title h1 span {
@@ -447,10 +447,6 @@ const StyledHome = styled.div`
 		}
 	}
 	@media screen and (min-width: 1024px) {
-		.landing {
-			height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-			height: calc(var(--vh, 1vh) * 100);
-		}
 	}
 	@media screen and (min-width: 1200px) {
 	}
