@@ -190,7 +190,7 @@ const StyledHome = styled.div`
 		margin: 0 auto;
 	}
 	.landing {
-		border: 1px solid red;
+		/* border: 1px solid red; */
 	}
 	/* .socials_container, */
 	/* .social_links, */
@@ -201,7 +201,7 @@ const StyledHome = styled.div`
 	.dt_landing *,
 	.left_landing *,
 	.right_landing * {
-		border: 1px solid blue;
+		/* border: 1px solid blue; */
 	}
 
 	// Landing Section
@@ -446,7 +446,7 @@ const StyledHome = styled.div`
 			font-size: 2rem;
 		}
 		.hero {
-			height: 100%;
+			/* height: 100%; */
 		}
 	}
 	@media screen and (min-width: 768px) {
