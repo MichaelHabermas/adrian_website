@@ -445,6 +445,9 @@ const StyledHome = styled.div`
 		.dt_sub_title {
 			font-size: 2rem;
 		}
+		.hero {
+			width: 100%;
+		}
 	}
 	@media screen and (min-width: 768px) {
 		.landing {
