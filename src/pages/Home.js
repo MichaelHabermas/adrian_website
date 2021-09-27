@@ -446,7 +446,7 @@ const StyledHome = styled.div`
 			font-size: 2rem;
 		}
 		.hero {
-			width: 100%;
+			height: 100%;
 		}
 	}
 	@media screen and (min-width: 768px) {
