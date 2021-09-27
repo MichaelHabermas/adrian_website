@@ -426,6 +426,12 @@ const StyledHome = styled.div`
 			height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 			height: calc(var(--vh, 1vh) * 80);
 		}
+		.left_landing {
+			width: 50%;
+		}
+		.right_landing {
+			width: 35%;
+		}
 		.landing_text h1 {
 			margin-top: 0%;
 		}
