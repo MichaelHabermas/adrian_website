@@ -189,14 +189,17 @@ const StyledHome = styled.div`
 		width: 90%;
 		margin: 0 auto;
 	}
-	.socials_container,
-	.social_links,
-	.mobile,
-	.mobile *,
+	.landing {
+		border: 1px solid red;
+	}
+	/* .socials_container, */
+	/* .social_links, */
+	/* .mobile, */
+	/* .mobile *, */
 	.desktop,
-	.desktop *,
-	.dt_landing *,
-	.left_landing *,
+	/* .desktop *, */
+	/* .dt_landing *, */
+	/* .left_landing *, */
 	.right_landing * {
 		border: 1px solid blue;
 	}
@@ -418,15 +421,16 @@ const StyledHome = styled.div`
 		}
 	}
 	@media screen and (orientation: landscape) and (max-device-width: 850px) {
-		.landing {
+		.landing,
+		.desktop {
 			height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-			height: calc(var(--vh, 1vh) * 100);
+			height: calc(var(--vh, 1vh) * 80);
 		}
 		.landing_text h1 {
 			margin-top: 0%;
 		}
 		.dt_landing {
-			height: 80%;
+			height: 70%;
 		}
 		.dt_title h1,
 		.dt_title h1 span {
