@@ -197,7 +197,7 @@ const StyledHome = styled.div`
 	.dt_landing > *,
 	.left_landing > *,
 	.right_landing > * {
-		/* border: 1px solid blue; */
+		border: 1px solid blue;
 	}
 
 	// Landing Section
@@ -421,7 +421,7 @@ const StyledHome = styled.div`
 			margin-top: 5%;
 		}
 		.dt_landing {
-			height: 60%;
+			height: 80%;
 		}
 		.dt_title h1,
 		.dt_title h1 span {
