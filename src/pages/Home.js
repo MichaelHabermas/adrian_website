@@ -417,13 +417,10 @@ const StyledHome = styled.div`
 		}
 	}
 	@media screen and (orientation: landscape) and (max-device-width: 850px) {
-		.desktop {
-			/* display: flex;
-			align-items: flex-end; */
+		.landing_text h1 {
+			margin-top: 5%;
 		}
 		.dt_landing {
-			/* display: flex;
-			justify-content: space-between; */
 			height: 60%;
 		}
 		.dt_title h1,
